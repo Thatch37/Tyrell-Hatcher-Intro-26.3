@@ -23,6 +23,13 @@ h1{
     list-style: none;
     justify-content: center;
 }
+.experience ul  {
+ display: flex;
+ text-decoration: none;
+ justify-content: space-evenly;
+ padding: 5px;
+
+}
 .connection{
     color: black;
     font-weight: bold;
@@ -31,4 +38,11 @@ h1{
     display: flex;
     justify-content: space-evenly;
     color: black;
+}
+#skills ul{
+display: flex;
+list-style-type: none;
+justify-content: space-evenly;
+padding: 5;
+
 }
