@@ -17,7 +17,7 @@ for (const skillName of skills) {
     skill.innerText = skillName;
     skillsList.appendChild(skill);
 }
-const messageForm = document.forms('leave_message')
+const messageForm = document.forms['leave_message']
 messageForm.addEventListener("submit", function(event){
     event.preventDefault();
     let name = event.target.usersName.value;
@@ -38,7 +38,7 @@ messageForm.addEventListener("submit", function(event){
 
         removeButton.addEventListener('click', function(){
             let entry = removeButton.parentNode;
-            entry.removeChild();
+            entry.remove();
         })
         newMessage.appendChild(removeButton)
 
