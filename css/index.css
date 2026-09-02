@@ -4,7 +4,7 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 section{
-    padding: 5,5,5,0;
+    padding: 5px 5px 5px 5px;
     text-align: center;
     font-size: 20px;
 }
@@ -39,10 +39,6 @@ h1{
     justify-content: space-evenly;
     color: black;
 }
-#skills ul{
-display: flex;
-list-style-type: none;
-justify-content: space-evenly;
-padding: 5;
-
+.connection ul{
+    display: flexbox;
 }
