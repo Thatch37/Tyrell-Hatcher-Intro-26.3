@@ -1,6 +1,7 @@
 const footerElement = document.createElement('footer')
 const body = document.querySelector('body'
 )
+
 body.appendChild(footerElement)
 const today = new Date()
 const thisYear = today.getFullYear()
@@ -17,7 +18,8 @@ for (const skillName of skills) {
     skill.innerText = skillName;
     skillsList.appendChild(skill);
 }
-const messageForm = document.forms('leave_message')
+
+const messageForm = document.forms["leave_message"]
 messageForm.addEventListener("submit", function(event){
     event.preventDefault();
     let name = event.target.usersName.value;
@@ -44,3 +46,17 @@ messageForm.addEventListener("submit", function(event){
 
     messageForm.reset();
 });
+
+
+const projectSection = document.getElementById("projects")
+const projectList = projectSection.querySelector('ul')
+fetch("https://api.github.com/users/Thatch37/repos")
+.then(response => response.json())
+.then(function(repositories) {
+    for (let i = 0; i < repositories.length; i++){
+        const project = document.createElement('li');
+        project.textContent = repositories[i].name;
+        projectList.appendChild(project);
+    }
+}) 
+.catch(error => console.error("Error", error))

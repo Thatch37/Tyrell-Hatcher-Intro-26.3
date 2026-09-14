@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyrell's API Weather App Project</title>
+  <link rel="stylesheet" href="weatherAPI.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-link">← Back to Portfolio</a>
+    <span class="nav-title">Weather App</span>
+  </nav>
+  <section class="search-section">
+    <input
+      type="text"
+      id="city-input"
+      placeholder="Enter a city name…"
+      autocomplete="off"
+    />
+    <button id="search-btn">Search</button>
+  </section>
+  <section class="endpoint-nav">
+    <button id="nav-temp" class="endpoint-btn active">🌡️ Temperature</button>
+    <button id="nav-humidity" class="endpoint-btn">💧 Humidity</button>
+  </section>
+  <section id="data-display" class="data-display">
+    <p class="placeholder">Search for a city to get started.</p>
+  </section>
+  <p id="error-msg" class="error-msg"></p>
+  <script src="weatherAPI.js"></script>
+</body>
+</html>
