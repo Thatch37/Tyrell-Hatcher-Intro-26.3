@@ -1,44 +1,84 @@
-body{
-    background-color: skyblue;
-    color: black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
 }
-section{
-    padding: 5px 5px 5px 5px;
+.headings {
+    color: #38bdf8;
+}
+h1.headings {
     text-align: center;
-    font-size: 20px;
+    font-size: 48px;
+    padding: 30px 20px 10px;
+    color: #f8fafc;
 }
-.headings{
-    color: black;
-    font-weight: bold;
-}
-h1{
-    font-weight: bolder;
-    font-size: 40px;
-    text-decoration: underline;
-}
-.experience{
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    justify-content: center;
-}
-.experience ul  {
- display: flex;
- text-decoration: none;
- justify-content: space-evenly;
- padding: 5px;
 
+.navlink {
+    background: #1e293b;
+    padding: 15px 20px;
+    position: sticky;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
-.connection{
-    color: black;
-    font-weight: bold;
-}
-.navlink ul{
+
+.navlink ul {
+    list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
-.connection ul{
-    display: flexbox;
+
+.navlink li {
+    display: inline-block;
+}
+.navlink a {
+    display: block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #1e293b;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 8px;
+}
+
+section p {
+    color: #cbd5e1;
+    font-size: 17px;
+}
+section ul {
+    list-style: none;
+}
+section ul li {
+    background: #0f172a;
+    margin: 10px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-left: 4px solid #38bdf8;
+}
+label {
+  display: inline-block;
+  width: 80px;
+}
+
+input, textarea {
+  width: 300px;
+  box-sizing: border-box;
 }
