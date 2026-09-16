@@ -1,6 +1,5 @@
 const footerElement = document.createElement('footer')
-const body = document.querySelector('body'
-)
+const body = document.querySelector('body')
 
 body.appendChild(footerElement)
 const today = new Date()
@@ -39,7 +38,7 @@ messageForm.addEventListener("submit", function(event){
 
         removeButton.addEventListener('click', function(){
             let entry = removeButton.parentNode;
-            entry.removeChild();
+            entry.remove();
         })
         newMessage.appendChild(removeButton)
 
